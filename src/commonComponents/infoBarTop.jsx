@@ -4,8 +4,8 @@ const infoBarTop = () => {
     return(
         <div className={styles.infoBarTop}>
             <p>info@corparight.com</p>
-            <p>+911234567890</p>
-            <p>+911234567890</p>
+            <p>+919513395633</p>
+            <p>+919844124669</p>
         </div>
     )
 }
