@@ -20,7 +20,7 @@ const ProductPage = ({ setCurrentPage }) => {
       top: page.scrollHeight,
       behavior: "smooth"
     })
-  }, [scrolling, firstScroll])
+  }, [scrolling])
 
   function handleMenu(index) {
     console.log(currentProduct)
