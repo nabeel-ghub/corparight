@@ -4,7 +4,7 @@ import MenuBarTop from "../commonComponents/menuBarTop";
 import ContactSection from "../commonComponents/contactSection";
 
 const ServicePage = ({ setCurrentPage }) => {
-  const [textArray, setTextArray] = useState([
+  const [textArray] = useState([
     <p key="1">Uniform Design</p>,
     <p key="2">Uniform Sampling</p>,
     <p key="3">Uniform Production</p>,

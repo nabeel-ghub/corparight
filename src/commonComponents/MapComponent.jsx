@@ -1,6 +1,6 @@
 // src/components/MapLibreView.tsx
-import { useEffect, useState, useRef } from "react";
-import { MapContainer, Marker, Popup, useMap, Circle } from "react-leaflet";
+import { useEffect } from "react";
+import { MapContainer, Marker, Popup, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "maplibre-gl/dist/maplibre-gl.css";
 import L from "leaflet";

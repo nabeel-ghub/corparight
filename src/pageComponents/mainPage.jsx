@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import HomePage from "./homePage";
 import ProductPage from './productPage';
 import ServicePage from "./servicePage";

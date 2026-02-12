@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import styles from "../css/uniformsPage.module.css";
 import schoolUniforms from "../css/images/school_uniforms.avif";
 import corporateUniforms from "../css/images/corporate_uniforms.avif";
@@ -11,7 +11,7 @@ const UniformsPage = ({setScrolling}) => {
   const [currentUniform, setCurrentUniform] = useState(1);
   const [mouseMoving, setMouseMoving] = useState(false);
   const [index, setIndex] = useState(0);
-  const [textArray, setTextArray] = useState([
+  const [textArray] = useState([
     <p key="1">Uniform Design</p>,
     <p key="2">Uniform Sampling</p>,
     <p key="3">Uniform Production</p>,
