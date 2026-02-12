@@ -1,0 +1,401 @@
+.servicePage {
+    position: relative;
+    top: 50px;
+    z-index: 50;
+    min-height: 100%;
+    height: calc(100vh - 50px);
+    width: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    background: url("./images/bg8.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+.v1 {
+    position: relative;
+    margin-top: 110px;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px 0;
+}
+
+.v1Text {
+    width: 70%;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-size: 45px;
+    text-align: center;
+}
+
+.v1Description {
+    width: 70%;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.v1Button {
+    width: 200px;
+    background: white;
+    color: #1c1c1c;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    height: 40px;
+    border-radius: 3px;
+    text-align: center;
+    border: 0;
+}
+
+.v2 {
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    background: white;
+}
+
+.v2v1 {
+    font-size: 35px;
+    font-weight: 800;
+    font-family: "Outfit", sans-serif;
+    color: rgb(86, 136, 152);
+}
+
+.v2v2 {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    width: 70%;
+    height: 30px;
+}
+
+.v2v2Button1 {
+    font-size: 11px;
+    width: 170px;
+    height: 35px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-right: 20px;
+    background: #1c1c1c;
+    border: 0;
+    color: white;
+}
+
+.v2v2Button2 {
+    font-size: 11px;
+    width: 170px;
+    height: 35px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    background: #1c1c1c;
+    border: 0;
+    color: white;
+}
+
+.v2v3 {
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+.v3 {
+    height: 100vh;
+    background: rgb(86, 136, 152);
+    padding: 50px 50px;
+    display: flex;
+    flex-flow: column;
+}
+
+.v3v1 {
+    font-size: 35px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+    color: white;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.v3v2 {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+}
+
+.v3v2h1 {
+    height: 100%;
+    min-width: 50%;
+    display: flex;
+    flex-flow: row;
+    padding: 0 50px;
+}
+
+.v3v2h1 ul {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-transform:uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.v3v2h2 {
+    width: 50%;
+    font-size: 35px;
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0 50px;
+}
+
+.v3v2h2 p {
+    animation: loopUp 3s ease;
+}
+
+.v4 {
+    background: #1c1c1c;
+    height: 80vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 50px 0;
+    justify-content: space-around;
+}
+
+.v4 h1 {
+    color: white;
+    font-size: 40px;
+    font-family: "Outfit", sans-serif;
+}
+
+.v4 p {
+    width: 70%;
+    font-family: "Inter", sans-serif;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.v5 {
+    height: 150vh;
+    width: 100%;
+    background: white;
+    padding: 50px;
+    display: flex;
+    flex-flow: column;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+.v5v1 {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.v5v1 h1 {
+    font-size: 35px;
+    font-family: "Outfit", sans-serif;
+    letter-spacing: 1px;
+}
+
+.v5v1 p {
+    padding: 10px 0;
+}
+
+.v5v2 {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.v5v2 div {
+    width: 50%;
+    padding: 20px;
+}
+.v5v2 div h1 {
+    font-size: 20px;
+    padding: 10px 0;
+    font-family: "Outfit", sans-serif;
+}
+
+.v5v3 {
+    height: 10%;
+    width: 100%;
+}
+
+@keyframes loopUp {
+    0% {
+        transform: translateY(-100px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+
+    35% {
+        transform: translateY(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+
+    70% {
+        transform: translateY(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+    
+    100% {
+        transform: translateY(100px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+}
+
+@keyframes loopRight {
+    0% {
+        transform: translateX(-100px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+
+    35% {
+        transform: translateX(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+
+    70% {
+        transform: translateX(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+    
+    100% {
+        transform: translateX(100px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 720px) {
+    .v1 {
+        flex-flow: column
+    }
+
+    .v1Text {
+        font-size: 35px;
+    }
+
+    .v1Description {
+        font-size: 14px;
+    }
+
+    .v2 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .v2v1 {
+        width: 90%;
+        text-align: center;
+    }
+
+    .v3 {
+        min-height: 100vh;
+        height: auto;
+    }
+
+    .v3v1 {
+        font-size: 35px;
+        text-align: center;
+        width: 90%;
+        padding: 0;
+    }
+
+    .v3v2 {
+        margin-top: 20px;
+        flex-flow: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .v3v2h1 {
+        height: 70vh;
+        width: 90%;
+        padding: 0;
+    }
+
+    .v3v2h2 {
+        margin-top: 30px;
+        min-height: 50vh;
+        height: auto;
+        width: 80%;
+        padding: 0;
+        transform: scale(0.8);
+    }
+
+    .v3v2h2 p {
+        animation: loopRight 3s ease;
+    }
+
+    .v4 {
+        min-height: 80vh;
+        height: auto;
+    }
+
+    .v4 h1 {
+        font-size: 35px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .v4 p {
+        margin-top: 20px;
+        font-size: 13px;
+        text-align: center;
+        width: 90%;
+    }
+
+    .v5 {
+        min-height: 150vh;
+        height: auto;
+    }
+
+    .v5v2 {
+        flex-flow: column;
+    }
+
+    .v5v2 div {
+        margin-top: 30px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .v5v3 {
+        margin-top:  30px;
+    }
+}

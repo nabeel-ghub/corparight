@@ -1,0 +1,105 @@
+.aboutPage {
+    position: relative;
+    top: 50px;
+    z-index: 50;
+    min-height: 100%;
+    height: calc(100vh - 50px);
+    width: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.v1 {
+    position: relative;
+    margin-top: 110px;
+    height: calc(100vh - 110px);
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    background-color: rgb(86, 136, 152);
+}
+
+.v1 h1 {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    font-family: "Outfit", sans-serif;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.v1 p {
+    width: 65%;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+
+.v2 {
+    height: 50vh;
+    display: flex;
+    flex-flow: row;
+}
+
+.v2v1 {
+    height: 100%;
+    width: 50%;
+    padding: 50px;
+    font-family: "Outfit", sans-serif;
+}
+
+.v2v1 p {
+    margin-top: 10px;
+}
+
+.v2v2 {
+    height: 100%;
+    width: 50%;
+    padding: 50px;
+    font-family: "Outfit", sans-serif;
+}
+
+.v2v2 p {
+    margin-top: 10px;
+}
+
+@media (max-width: 720px) {
+    .v1 {
+        min-height: 100vh;
+        height: auto;
+        flex-flow: column;
+    }
+
+    .v1 h1 {
+        font-size: 45px;
+        padding: 40px 0 20px 0;
+    }
+
+    .v1 p {
+        width: 90%;
+        padding: 0 0 40px 0;
+    }
+
+    .v2 {
+        min-height: 100vh;
+        height: auto;
+        flex-flow: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .v2v1 {
+        width: 100%;
+        padding: 20px 40px;
+    }
+
+    .v2v2 {
+        width: 100%;
+        padding: 20px 40px;
+    }
+}

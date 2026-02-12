@@ -1,0 +1,303 @@
+.productPage {
+    position: relative;
+    top: 50px;
+    z-index: 50;
+    min-height: 100%;
+    height: calc(100vh - 50px);
+    width: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.v1 {
+    margin-top: 110px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10vw;
+    background: #1c1c1c;
+    color: #62c0e0;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.v1 p {
+    border-bottom: 2px solid rgb(98, 192, 224);
+    cursor: pointer;
+}
+
+.v1 p.active {
+    border-bottom: 2px solid white;
+}
+
+.v2 {
+    height: 150px;
+    width: 100%;
+    background:rgb(67, 129, 150);
+    color: white;
+    font-size: 50px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.v3 {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-flow: row;
+    padding: 50px;
+}
+
+.v3h1 {
+    height: 100%;
+    width: 35%;
+    background: url("./images/custom_shoe.png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 20px 20px 100px 1px black;
+}
+
+.v3h2 {
+    height: 100%;
+    width: 65%;
+    padding: 20px 100px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.v3h2Text {
+    font-size: 40px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.v3h2Description {
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.v3h2List {
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.v3h2Button {
+    height: 40px;
+    border: 0;
+    outline: 0;
+    background: #1c1c1c;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    border-radius: 5px;
+}
+
+.v4 {
+    min-block-size: calc(100vh - 50px);
+    display: flex;
+    flex-flow: row;
+    padding: 50px;
+}
+
+.v4h1 {
+    min-height: 100%;
+    width: 65%;
+    padding: 20px 100px 20px 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.v4h1Text {
+    font-size: 40px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.v4h1Description {
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.v4h1Button {
+    height: 40px;
+    border: 0;
+    outline: 0;
+    background: #1c1c1c;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    border-radius: 5px;
+}
+
+.v4h2 {
+    min-height: 100%;
+    width: 35%;
+    background: url("./images/custom_tshirts.png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 20px 20px 100px 1px black;
+}
+
+.v5 {
+    min-block-size: calc(100vh - 50px);
+    display: flex;
+    flex-flow: row;
+    padding: 50px;
+}
+
+.v5h1 {
+    min-height: 100%;
+    width: 35%;
+    background: url("./images/custom_uniforms.png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 20px 20px 100px 1px black;
+}
+
+.v5h2 {
+    min-height: 100%;
+    width: 65%;
+    padding: 20px 100px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.v5h2Text {
+    font-size: 40px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.v5h2Description {
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.v5h2Button {
+    height: 40px;
+    border: 0;
+    outline: 0;
+    background: #1c1c1c;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    border-radius: 5px;
+}
+
+@media (max-width: 720px) {
+    .v1 p {
+        height: 25px;
+        width: 25px;
+        font-size: 0px;
+        background-position: center;
+        background-size: 95%;
+        background-repeat: no-repeat;
+    }
+
+    .v1Nav1 {
+        background-image: url("./images/all_icon.png");
+    }
+
+    .v1Nav2 {
+        background-image: url("./images/uniform_icon.png");
+    }
+
+    .v1Nav3 {
+        background-image: url("./images/tshirt_icon.png");
+    }
+
+    .v1Nav4 {
+        background-image: url("./images/shoes_icon.png");
+    }
+
+    .v1Nav5 {
+        background-image: url("./images/sports_icon.png");
+    }
+
+    .v2 {
+        font-size: 30px;
+    }
+
+    .v3 {
+        flex-flow: column;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .v3h1 {
+        height: 200px;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    
+    .v3h2 {
+        height: 50%;
+        width: 100%;
+        padding: 0;
+        height: auto;
+        transform: scale(0.9);
+    }
+
+    .v4 {
+        flex-flow: column;
+        height: auto;
+        padding-top: 0px;
+    }
+
+    .v4h1 {
+        height: 50%;
+        width: 100%;
+        padding: 0;
+        height: auto;
+        transform: scale(0.9);
+        margin-bottom: 30px;
+    }
+
+    .v4h2 {
+        height: 200px;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .v5 {
+        flex-flow: column;
+        height: auto;
+    }
+
+    .v5h1 {
+        height: 200px;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    
+    .v5h2 {
+        height: 50%;
+        width: 100%;
+        padding: 0;
+        height: auto;
+        transform: scale(0.9);
+    }
+}

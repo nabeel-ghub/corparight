@@ -1,0 +1,202 @@
+.menuBarTop {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #ccf2ff;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: rgb(67, 138, 176);
+  display: flex;
+  flex-flow: column;
+  z-index: 10000000;
+}
+
+.pcmenu {
+  height: 110px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+
+.h1 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 140px;
+  width: 140px;
+  background: url("./images/corparight.PNG");
+  background-position: center;
+  background-size: cover;
+  margin-left: 20px;
+}
+
+.h2 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 50px 0 50px;
+}
+
+.nav {
+  display: none;
+  height: 0;
+  max-height: 0;
+  width: 0;
+  max-width: 0;
+  text-align: center;
+  font-weight: 500;
+  padding: 0px 0px;
+  color: rgb(68, 151, 179);
+}
+
+a {
+  color:rgb(68, 151, 179);
+  text-decoration: none;
+}
+
+.nav:hover {
+  border-bottom: 3px solid lightblue;
+  cursor: pointer;
+}
+
+.nav.active {
+  color: #2f5e77;
+  border-bottom: 3px solid #2f5e77;
+}
+
+.mobilenav {
+  height: 30px;
+  width: 30px;
+  max-height: 30px;
+  max-width: 30px;
+  margin-left: calc(100% - 30px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("./images/menu-icon.png");
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-out;
+}
+
+.mobilenav.active {
+  background: url("./images/close-icon.png");
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotateZ(-180deg);
+}
+
+.mobilemenu {
+  height: 0px;
+  max-height: 0px;
+  transition: 0.3s ease;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.mobilemenu.active {
+  height: 250px;
+  max-height: 250px;
+  padding: 0 50px 30px 0;
+}
+
+.nav1 {
+  height: 0px;
+  opacity: 0;
+  max-height: 0px;
+  transition: 0.3s ease;
+  font-size: 16px;
+  font-weight: 400;
+  pointer-events: none;
+}
+
+.mobilemenu.active .nav1 {
+  opacity: 1;
+  height: 20px;
+  max-height: 20px;
+  pointer-events: all;
+}
+
+.nav1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.nav1.active {
+  color: #2f5e77;
+  text-decoration: #292929 underline;
+}
+
+@media (min-width: 820px) {
+  .menuBarTop {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+  }
+
+  .h1 {
+    width: 30%;
+  }
+
+  .logo {
+    height: 160px;
+    width: 160px;
+    margin-left: 20px;
+  }
+
+  .h2 {
+    width: 70%;
+  }
+
+  .nav {
+    display: inline-block;
+    height: 50px;
+    max-height: 50px;
+    width: 50px;
+    max-width: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobilenav {
+    display: none;
+    height: 0px;
+    max-height: 0px;
+    width: 0px;
+    max-width: 0px;
+  }
+
+  .mobilemenu {
+    height: 0;
+    display: none;
+    width: 0;
+    max-height: 0;
+    max-width: 0;
+  }
+
+  .nav1 {
+  display: none;
+  height: 0;
+  max-height: 0;
+  width: 0;
+  max-width: 0;
+  text-align: center;
+  pointer-events: none;
+  }
+}

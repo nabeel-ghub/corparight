@@ -1,0 +1,75 @@
+.v2 {
+  height: 150px;
+  width: 100%;
+  background: rgb(67, 129, 150);
+  color: white;
+  font-size: 50px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.v3 {
+    height: 80vh;
+    width: 100%;
+    background: url("./images/tshirt_bg.avif"), white;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.v4 {
+    height: 100vh;
+    background: white;
+    padding: 50px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.v4 ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: space-around;
+    list-style: none;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.v4 button {
+    height: 40px;
+    background: black;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    width: 50%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.v5 {
+    height: 350px;
+    width: 100%;
+    background: url("../css/images//jerseynsportsbg.avif");
+    background-position: center;
+    background-size: cover;
+    border-top: 5px solid rgb(67, 129, 150);
+    border-bottom: 5px solid rgb(67, 129, 150);
+}
+
+.v6 {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(67, 129, 150);
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+}
