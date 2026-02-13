@@ -31,18 +31,18 @@
     width: 50%;
     display: flex;
     align-items: center;
-    font-size: 6vw;
-    font-family: "Outfit", sans-serif;
+    font-size: 5vw;
+    font-family: "Inter", sans-serif;
     color: white;
     font-weight: 800;
 }
 
-.v1h1 p {
+.v1h1 h1 {
     transform: scaleY(0.5) translateY(200px);
     opacity: 0;
 }
 
-.v1.active .v1h1 p {
+.v1.active .v1h1 h1 {
     animation: fadeUp 0.4s ease-out forwards;
 }
 
@@ -151,12 +151,12 @@
     margin-right: 20px;
 }
 
-.v2v1 h1 {
+.v2v1 h2 {
     transform: scaleY(0.5) translateY(200px);
     opacity: 0;
 }
 
-.v2v1.active h1 {
+.v2v1.active h2 {
     animation: fadeUp 0.4s ease-out forwards;
 }
 
@@ -273,12 +273,12 @@
     box-shadow: 10px 10px 100px 1px black, 10px 10px 40px 10px black inset;
 }
 
-.v2v2 h1 {
+.v2v2 h2 {
     transform: scaleY(0.5) translateY(200px);
     opacity: 0;
 }
 
-.v2v2.active h1 {
+.v2v2.active h2 {
     animation: fadeUp 0.4s ease-out forwards;
 }
 

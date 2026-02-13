@@ -50,9 +50,9 @@ const HomePage = ({setCurrentPage}) => {
         ref={v1Ref}
       >
         <div className={styles.v1h1}>
-          <p>
-            THE RIGHT<br></br>CORPORATE<br></br> CHOICE
-          </p>
+          <h1>
+            Corpa<br></br>RIGHT
+          </h1>
         </div>
         <div className={styles.v1h2}>
           <p>
@@ -73,7 +73,7 @@ const HomePage = ({setCurrentPage}) => {
             <div className={styles.v2v1h1Image}></div>
           </div>
           <div className={styles.v2v1h2}>
-            <h1 className={styles.v2v1h2Title}>Uniforms & Merchandising</h1>
+            <h2 className={styles.v2v1h2Title}>Uniforms & Merchandising</h2>
             <p className={styles.v2v1h2Description}>
               We offer a wide range of Refined Educational and Sports apparel
               across India.
@@ -93,7 +93,7 @@ const HomePage = ({setCurrentPage}) => {
           ref={v3Ref}
         >
           <div className={styles.v2v2h1}>
-            <h1 className={styles.v2v2h1Title}>School Supplies</h1>
+            <h2 className={styles.v2v2h1Title}>School Supplies</h2>
             <p className={styles.v2v2h1Description}>
               Your one-stop shop for essential school supplies, supporting
               learning every step of the way.

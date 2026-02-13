@@ -16,7 +16,7 @@ const ContactSection = () => {
     }
     return(
         <div className={styles.contactSection}>
-            <h1 className={styles.Text}>Contact Corparight</h1>
+            <h2 className={styles.Text}>Contact Corparight</h2>
             <input type="text" placeholder="Your name" ref={nameRef} className={styles.nameInput}></input>
             <input type="text" placeholder="Subject" ref={subRef} className={styles.subjectInput}></input>
             <textarea placeholder="Message..." ref={bodyRef} className={styles.messageInput}></textarea>

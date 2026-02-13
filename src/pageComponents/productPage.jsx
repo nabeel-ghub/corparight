@@ -9,26 +9,29 @@ import CustomShoesPage from "./customShoesPage";
 
 const ProductPage = ({ setCurrentPage }) => {
   const [currentProduct, setCurrentProduct] = useState("all");
-  const [firstScroll, setFirstScroll] = useState(true);
+  const firstScrollRef = useRef(false);
   const [scrolling, setScrolling] = useState(false);
   const pageRef = useRef();
 
   useEffect(() => {
-    if(firstScroll) return setFirstScroll(false);
-    const page = pageRef.current;
-    page.scrollTo({
-      top: page.scrollHeight,
-      behavior: "smooth"
-    })
-  }, [scrolling])
+    if (firstScrollRef.current) {
+      const page = pageRef.current;
+      page.scrollTo({
+        top: page.scrollHeight,
+        behavior: "smooth",
+      });
+    } else {
+      firstScrollRef.current = true;
+    }
+  }, [scrolling]);
 
   function handleMenu(index) {
-    console.log(currentProduct)
-    if(index === 1) return setCurrentProduct("all");
-    if(index === 2) return setCurrentProduct("uniforms");
-    if(index === 3) return setCurrentProduct("tshirts");
-    if(index === 4) return setCurrentProduct("shoes");
-    if(index === 5) return setCurrentProduct("sports");
+    console.log(currentProduct);
+    if (index === 1) return setCurrentProduct("all");
+    if (index === 2) return setCurrentProduct("uniforms");
+    if (index === 3) return setCurrentProduct("tshirts");
+    if (index === 4) return setCurrentProduct("shoes");
+    if (index === 5) return setCurrentProduct("sports");
   }
   return (
     <div className={styles.productPage} ref={pageRef}>
@@ -37,11 +40,56 @@ const ProductPage = ({ setCurrentPage }) => {
         currentPage={"product_page"}
       ></MenuBarTop>
       <div className={styles.v1}>
-        <p className={currentProduct === "all"? `${styles.active} ${styles.v1Nav1}` : styles.v1Nav1} onClick={() => handleMenu(1)}>All</p>
-        <p className={currentProduct === "uniforms"? `${styles.active} ${styles.v1Nav2}` : styles.v1Nav2} onClick={() => handleMenu(2)}>Uniforms</p>
-        <p className={currentProduct === "tshirts"? `${styles.active} ${styles.v1Nav3}` : styles.v1Nav3} onClick={() => handleMenu(3)}>T-Shirts</p>
-        <p className={currentProduct === "shoes"? `${styles.active} ${styles.v1Nav4}` : styles.v1Nav4} onClick={() => handleMenu(4)}>Shoes</p>
-        <p className={currentProduct === "sports"? `${styles.active} ${styles.v1Nav5}` : styles.v1Nav5} onClick={() => handleMenu(5)}>Sports</p>
+        <p
+          className={
+            currentProduct === "all"
+              ? `${styles.active} ${styles.v1Nav1}`
+              : styles.v1Nav1
+          }
+          onClick={() => handleMenu(1)}
+        >
+          All
+        </p>
+        <p
+          className={
+            currentProduct === "uniforms"
+              ? `${styles.active} ${styles.v1Nav2}`
+              : styles.v1Nav2
+          }
+          onClick={() => handleMenu(2)}
+        >
+          Uniforms
+        </p>
+        <p
+          className={
+            currentProduct === "tshirts"
+              ? `${styles.active} ${styles.v1Nav3}`
+              : styles.v1Nav3
+          }
+          onClick={() => handleMenu(3)}
+        >
+          T-Shirts
+        </p>
+        <p
+          className={
+            currentProduct === "shoes"
+              ? `${styles.active} ${styles.v1Nav4}`
+              : styles.v1Nav4
+          }
+          onClick={() => handleMenu(4)}
+        >
+          Shoes
+        </p>
+        <p
+          className={
+            currentProduct === "sports"
+              ? `${styles.active} ${styles.v1Nav5}`
+              : styles.v1Nav5
+          }
+          onClick={() => handleMenu(5)}
+        >
+          Sports
+        </p>
       </div>
       {currentProduct === "all" ? (
         <>
@@ -117,22 +165,18 @@ const ProductPage = ({ setCurrentPage }) => {
           </div>
         </>
       ) : null}
-      {currentProduct === "uniforms"?
-      <UniformsPage setScrolling={setScrolling}></UniformsPage>
-      :
-      null}
-      {currentProduct === "tshirts"?
-      <TShirtsPage setScrolling={setScrolling}></TShirtsPage>
-      :
-      null}
-      {currentProduct === "shoes"?
-      <CustomShoesPage setScrolling={setScrolling}></CustomShoesPage>
-      :
-      null}
-      {currentProduct === "sports"?
-      <SportsPage setScrolling={setScrolling}></SportsPage>
-      :
-      null}
+      {currentProduct === "uniforms" ? (
+        <UniformsPage setScrolling={setScrolling}></UniformsPage>
+      ) : null}
+      {currentProduct === "tshirts" ? (
+        <TShirtsPage setScrolling={setScrolling}></TShirtsPage>
+      ) : null}
+      {currentProduct === "shoes" ? (
+        <CustomShoesPage setScrolling={setScrolling}></CustomShoesPage>
+      ) : null}
+      {currentProduct === "sports" ? (
+        <SportsPage setScrolling={setScrolling}></SportsPage>
+      ) : null}
       <ContactSection></ContactSection>
     </div>
   );
