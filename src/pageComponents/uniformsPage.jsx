@@ -54,7 +54,7 @@ const UniformsPage = ({setScrolling}) => {
   }
 
   function handleClick() {
-    setScrolling(prev => !prev)
+    setScrolling()
   }
 
   return (

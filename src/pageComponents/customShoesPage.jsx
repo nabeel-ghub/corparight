@@ -5,7 +5,7 @@ import mk3 from "../css/images/making3.avif";
 import mk4 from "../css/images/making4.avif";
 import mk5 from "../css/images/making5.avif";
 
-const CustomShoesPage = ({setScrolling}) => {
+const CustomShoesPage = ({}) => {
   return (
     <div className={styles.customShoePage}>
       <div className={styles.v2}>SHOES</div>

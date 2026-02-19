@@ -16,7 +16,7 @@ import bmAccessories from "../css/images/badminton_accessories.avif";
 
 const SportsPage = ({ setScrolling }) => {
     function handleClick() {
-        setScrolling(prev => !prev)
+        setScrolling()
     }
   return (
     <div className={styles.sportsPage}>

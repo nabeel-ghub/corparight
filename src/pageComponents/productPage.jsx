@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import styles from "../css/productPage.module.css";
 import MenuBarTop from "../commonComponents/menuBarTop";
 import ContactSection from "../commonComponents/contactSection";
@@ -9,21 +9,15 @@ import CustomShoesPage from "./customShoesPage";
 
 const ProductPage = ({ setCurrentPage }) => {
   const [currentProduct, setCurrentProduct] = useState("all");
-  const firstScrollRef = useRef(false);
-  const [scrolling, setScrolling] = useState(false);
   const pageRef = useRef();
 
-  useEffect(() => {
-    if (firstScrollRef.current) {
-      const page = pageRef.current;
+  function goToContact() {
+    const page = pageRef.current;
       page.scrollTo({
         top: page.scrollHeight,
         behavior: "smooth",
       });
-    } else {
-      firstScrollRef.current = true;
-    }
-  }, [scrolling]);
+  }
 
   function handleMenu(index) {
     console.log(currentProduct);
@@ -166,16 +160,16 @@ const ProductPage = ({ setCurrentPage }) => {
         </>
       ) : null}
       {currentProduct === "uniforms" ? (
-        <UniformsPage setScrolling={setScrolling}></UniformsPage>
+        <UniformsPage setScrolling={goToContact}></UniformsPage>
       ) : null}
       {currentProduct === "tshirts" ? (
-        <TShirtsPage setScrolling={setScrolling}></TShirtsPage>
+        <TShirtsPage setScrolling={goToContact}></TShirtsPage>
       ) : null}
       {currentProduct === "shoes" ? (
-        <CustomShoesPage setScrolling={setScrolling}></CustomShoesPage>
+        <CustomShoesPage></CustomShoesPage>
       ) : null}
       {currentProduct === "sports" ? (
-        <SportsPage setScrolling={setScrolling}></SportsPage>
+        <SportsPage setScrolling={goToContact}></SportsPage>
       ) : null}
       <ContactSection></ContactSection>
     </div>
