@@ -56,7 +56,7 @@
 .v3h1 {
     height: 100%;
     width: 35%;
-    background: url("./images/custom_shoe.png");
+    background: url("./images/custom_shoe.avif");
     background-size: cover;
     background-position: center;
     box-shadow: 20px 20px 100px 1px black;
@@ -148,7 +148,7 @@
 .v4h2 {
     min-height: 100%;
     width: 35%;
-    background: url("./images/custom_tshirts.png");
+    background: url("./images/custom_tshirts.avif");
     background-size: cover;
     background-position: center;
     box-shadow: 20px 20px 100px 1px black;
@@ -164,7 +164,7 @@
 .v5h1 {
     min-height: 100%;
     width: 35%;
-    background: url("./images/custom_uniforms.png");
+    background: url("./images/custom_uniforms.avif");
     background-size: cover;
     background-position: center;
     box-shadow: 20px 20px 100px 1px black;
