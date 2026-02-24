@@ -38,12 +38,13 @@
 }
 
 .v1h1 h1 {
-    transform: scaleY(0.5) translateY(200px);
+    filter: blur(4px);
+    transform: translateY(20px);
     opacity: 0;
 }
 
 .v1.active .v1h1 h1 {
-    animation: fadeUp 0.4s ease-out forwards;
+    animation: fadeUp 0.6s ease forwards;
 }
 
 .v1h2 {
@@ -60,12 +61,13 @@
 }
 
 .v1h2 p {
-    transform: scaleY(0.5) translateY(200px);
+    filter: blur(4px);
+    transform: translateY(20px);
     opacity: 0;
 }
 
 .v1.active .v1h2 p {
-    animation: fadeUp 0.4s ease-out forwards;
+    animation: fadeUp 0.6s ease forwards;
 }
 
 .v2 {
@@ -152,30 +154,33 @@
 }
 
 .v2v1 h2 {
-    transform: scaleY(0.5) translateY(200px);
+    filter: blur(4px);
+    transform: translateY(20px);
     opacity: 0;
 }
 
 .v2v1.active h2 {
-    animation: fadeUp 0.4s ease-out forwards;
+    animation: fadeUp 0.6s ease-out forwards;
 }
 
 .v2v1 p {
-    transform: scaleY(0.5) translateY(200px);
+    filter: blur(4px);
+    transform: translateY(20px);
     opacity: 0;
 }
 
 .v2v1.active p {
-    animation: fadeUp 0.4s ease-out forwards;
+    animation: fadeUp 0.6s ease-out forwards;
 }
 
 .v2v1 button {
-    transform: scaleY(0.5) translateY(200px);
+    filter: blur(4px);
+    transform: translateY(20px);
     opacity: 0;
 }
 
 .v2v1.active button {
-    animation: fadeUp 0.4s ease-out forwards;
+    animation: fadeUp 0.6s ease-out forwards;
 }
 
 .v2v2 {
@@ -274,30 +279,33 @@
 }
 
 .v2v2 h2 {
-    transform: scaleY(0.5) translateY(200px);
+    filter: blur(4px);
+    transform: translateY(20px);
     opacity: 0;
 }
 
 .v2v2.active h2 {
-    animation: fadeUp 0.4s ease-out forwards;
+    animation: fadeUp 0.6s ease-out forwards;
 }
 
 .v2v2 p {
-    transform: scaleY(0.5) translateY(200px);
+    filter: blur(4px);
+    transform: translateY(20px);
     opacity: 0;
 }
 
 .v2v2.active p {
-    animation: fadeUp 0.4s ease-out forwards;
+    animation: fadeUp 0.6s ease-out forwards;
 }
 
 .v2v2 button {
-    transform: scaleY(0.5) translateY(200px);
+    filter: blur(4px);
+    transform: translateY(20px);
     opacity: 0;
 }
 
 .v2v2.active button {
-    animation: fadeUp 0.4s ease-out forwards;
+    animation: fadeUp 0.6s ease-out forwards;
 }
 
 .v4 {
@@ -329,12 +337,13 @@
 }
 
 .v4h1 p {
-    transform: scaleY(0.5) translateY(200px);
+    filter: blur(4px);
+    transform: translateY(20px);
     opacity: 0;
 }
 
 .v4.active .v4h1 p {
-    animation: fadeUp 0.4s ease-out forwards;
+    animation: fadeUp 0.6s ease-out forwards;
 }
 
 .v4h2 {
@@ -351,12 +360,13 @@
 }
 
 .v4h2 p {
-    transform: scaleY(0.5) translateY(200px);
+    filter: blur(4px);
+    transform: translateY(20px);
     opacity: 0;
 }
 
 .v4.active .v4h2 p {
-    animation: fadeUp 0.4s ease-out forwards;
+    animation: fadeUp 0.6s ease-out forwards;
 }
 
 .v5 {
@@ -397,7 +407,8 @@
 
 @keyframes fadeUp {
     100% {
-        transform: scaleY(1) translateY(0px);
+        filter: blur(0);
+        transform: translateY(0px);
         opacity: 1;
     }
 }

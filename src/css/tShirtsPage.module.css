@@ -73,3 +73,33 @@
     font-family: "Outfit", sans-serif;
     font-size: 20px;
 }
+
+@media (max-width: 720px) {
+    .v3 {
+        height: 50vh;
+    }
+
+    .v4 {
+        min-height: 100vh;
+        height: auto;
+        padding: 20px 50px;
+    }
+
+    .v4 ul {
+        min-height: 100vh;
+        height: auto;
+        font-size: 14px;
+    }
+
+    .v5 {
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 200px;
+    }
+
+    .v6 {
+        font-size: 14px;
+        padding: 20px;
+        text-align: center;
+    }
+}

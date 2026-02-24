@@ -24,7 +24,7 @@ const MenuBarTop = ({setCurrentPage, currentPage}) => {
                 <p className={currentPage === "service_page"? `${styles.nav} ${styles.active}` : styles.nav} onClick={() => handleNav(3)}>Services</p>
                 <p className={currentPage === "contact_page"? `${styles.nav} ${styles.active}` : styles.nav} onClick={() => handleNav(4)}>Contact</p>
                 <p className={currentPage === "about_page"? `${styles.nav} ${styles.active}` : styles.nav} onClick={() => handleNav(5)}>About us</p>
-                <p className={styles.nav} onClick={() => handleNav(6)}><a href="/Nabeel_K.pdf" download="Globalwave.pdf">Catalogue</a></p>
+                <p className={styles.nav} onClick={() => handleNav(6)}><a href="/corparight.pdf" download="Corparight.pdf">Catalogue</a></p>
                 <p className={isActiveMenu? `${styles.mobilenav} ${styles.active}` : styles.mobilenav} onClick={() => setIsActiveMenu(!isActiveMenu)}></p>
             </div>
             </div>
