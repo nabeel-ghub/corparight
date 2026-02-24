@@ -9,7 +9,7 @@ const ContactSection = () => {
         const nameInput = nameRef.current;
         const subInput = subRef.current;
         const bodyInput = bodyRef.current;
-        window.location.href = `mailto:nabeellatheef9@gmail.com?subject=${subInput.value}&body=Hiii GlobalWave Team, %0A%0A${bodyInput.value}%0A%0ALooking forward to your response,%0A%0A${nameInput.value}`;
+        window.location.href = `mailto:info@corparight.com?subject=${subInput.value}&body=Hiii GlobalWave Team, %0A%0A${bodyInput.value}%0A%0ALooking forward to your response,%0A%0A${nameInput.value}`;
         nameInput.value = "";
         subInput.value = "";
         bodyInput.value = "";
