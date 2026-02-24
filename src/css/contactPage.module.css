@@ -114,10 +114,13 @@
     }
 
     .v2h1 {
-        transform: scale(0.9);
+        font-size: 14px;
+        height: 28px;
+        width: 200px;
     }
 
     .v2h2 {
-        transform: scale(0.9);
+        height: 28px;
+        width: 28px;
     }
 }

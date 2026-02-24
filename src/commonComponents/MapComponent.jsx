@@ -35,12 +35,12 @@ const MapLibreView = () => {
   return (
     <>
     <MapContainer
-      center={[38.912753, -77.032194]}
-      zoom={10}
+      center={[12.995109, 77.541590]}
+      zoom={13}
       style={{ height: "100%", width: "100%" }}
     >
      <MapLibreTileLayer/>
-        <Marker position={[38.912753, -77.032194]}
+        <Marker position={[12.995109, 77.541590]}
                 icon={customIcon} 
                 draggable={false}
                 >

@@ -16,10 +16,7 @@ const ContactPage = ({setCurrentPage}) => {
                 <div className={styles.v1h1}>
                     <div className={styles.v1h1v1}>Corparight Location</div>
                     <div className={styles.v1h1v2}>
-                       <b>Head Office :</b> CorpEss 195/3, Dommasandra,Sarjapur-Marathahalli-Rd, Bangalore, Karnataka, 562125, India <br></br>
-                       <br></br>
-                       <b>Branch :</b> CorpEss SRMP General trading llc, Store no.4 , Near AL-Shola school, Industrial area 13, Sharjah, UAE
-                       <br></br>
+                       <b>Head Office :</b> # S /57-B ,15th main 1stcross Dwarakavasa road BEL layout 2nd stage Bharathnagar ,herohalli Bangalore 560091<br></br>
                        <br></br>
                        <b>Hours :</b>&nbsp; Mon-Sat&nbsp; 9am-5pm
                     </div>
@@ -30,10 +27,9 @@ const ContactPage = ({setCurrentPage}) => {
             </div>
             <div className={styles.v2}>
                 <div className={styles.v2h1}>Corparight Socials : </div>
-                <a href="/instagram"><button className={styles.v2h2} style={{backgroundImage: `url(${instagramLogo})`}}></button></a>
-                <a href="/whatsapp"><button className={styles.v2h2} style={{backgroundImage: `url(${whatsappLogo})`}}></button></a>
-                <a href="/facebook"><button className={styles.v2h2} style={{backgroundImage: `url(${facebookLogo})`}}></button></a>
-                <a href="/x"><button className={styles.v2h2} style={{backgroundImage: `url(${xLogo})`}}></button></a>
+                <a href="https://instagram.com/corparight"><button className={styles.v2h2} style={{backgroundImage: `url(${instagramLogo})`}}></button></a>
+                <a href="https://wa.me/+919844124669"><button className={styles.v2h2} style={{backgroundImage: `url(${whatsappLogo})`}}></button></a>
+                <a href="https://x.com/CorpaRight"><button className={styles.v2h2} style={{backgroundImage: `url(${xLogo})`}}></button></a>
             </div>
             <ContactSection></ContactSection>
         </div>
