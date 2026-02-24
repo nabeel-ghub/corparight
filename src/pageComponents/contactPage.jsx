@@ -4,7 +4,6 @@ import ContactSection from "../commonComponents/contactSection";
 import MapLibreView from "../commonComponents/MapComponent";
 import instagramLogo from "../css/images/instagram_logo.png";
 import whatsappLogo from "../css/images/whatsapp_logo.png";
-import facebookLogo from "../css/images/facebook_logo.png";
 import xLogo from "../css/images/x_logo.png";
 
 
