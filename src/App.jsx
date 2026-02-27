@@ -1,18 +1,9 @@
-import { useState, Suspense, lazy } from 'react';
-const MainPage = lazy(() => import('./pageComponents/mainPage'));
-const LoadingPage = lazy(() => import('./pageComponents/loadingPage'));
+import MainPage from './pageComponents/mainPage';
 
-function App() {
-  const [isLoading, setIsLoading] = useState(true);
+const App = () => {
   return (
     <div className="App">
-      <Suspense fallback={<div>Loading...</div>}>
-        {isLoading ? (
-          <LoadingPage setIsLoading={setIsLoading} />
-        ) : (
-          <MainPage />
-        )}
-      </Suspense>
+        <MainPage />
     </div>
   );
 }
